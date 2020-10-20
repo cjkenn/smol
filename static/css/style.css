@@ -1,8 +1,8 @@
 :root {
-    --font-color: #f5deb3;
-    --body-color: #2E3440;
-    --link-color: #81A1C1;
-    --link-visited-color: #B48EAD;
+    --font-color: black;
+    --body-color: #ffd;
+    --link-color: #5E81AC;
+    --link-visited-color: #745d70;
 }
 
 html {
