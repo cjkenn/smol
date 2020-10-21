@@ -1,5 +1,7 @@
 +++
 title = "{{ replace .Name "-" " " | title }}"
 date = {{ .Date }}
-showdate: true
+showdate = true
+styleletter = true
+showtitle = true
 +++

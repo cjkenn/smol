@@ -2,18 +2,34 @@
 
 <main>
   <article>
-    <h1>{{ .Title }}</h1>
-
-    {{if .Params.showdate }}
-    <b><time>{{ .Date.Format (default "2006-01-02 15:04:05" .Site.Params.dateFmt) }}</time></b>
+    {{ if .Params.showtitle }}
+    <div class="post-title">
+      <h1>{{ .Title }}</h1>
+    </div>
     {{ end }}
+
+      {{ if .Params.showdate }}
+      <div class="post-subtext">
+	<time>
+	  {{ .Date.Format (default "2006-01-02" .Site.Params.dateFmt) }}
+	</time>
+      </div>
+      {{ end }}
+
     {{ range .Params.tags }}
     <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
     {{ end }}
 
-    <div>
+    {{ if .Params.styleletter }}
+    <div class="post-content">
       {{ .Content }}
     </div>
+    {{ else }}
+    <div >
+      {{ .Content }}
+    </div>
+    {{ end }}
+
   </article>
 </main>
 
