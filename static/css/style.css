@@ -59,8 +59,8 @@ blockquote {
 }
 
 .site-title a:link, .site-title a:visited {
-    text-decoration: none !important;
-    color: var(--link-color) !important;
+    text-decoration: none;
+    color: var(--link-color);
 }
 
 .site-subtext {
