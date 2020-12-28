@@ -34,14 +34,6 @@ article {
     text-align: justify;
 }
 
-blockquote {
-  margin: 20px 20px;
-  padding: 0 20px;
-  border-left: 2px solid black;
-  text-align: left;
-  font-style: italic;
-}
-
 a:link {
     color: var(--link-color);
 }
@@ -50,12 +42,25 @@ a:visited {
     color: var(--link-visited-color);
 }
 
+blockquote {
+  margin: 20px 20px;
+  padding: 0 20px;
+  border-left: 2px solid black;
+  text-align: left;
+  font-style: italic;
+}
+
 .site-title {
     font-size: 2rem;
     line-height: 1.2;
     letter-spacing: -1.5px;
     font-weight: bold;
     padding-top: 5px;
+}
+
+.site-title a:link, .site-title a:visited {
+    text-decoration: none;
+    color: var(--link-color);
 }
 
 .site-subtext {
